@@ -707,22 +707,17 @@ footer {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   head {
     width: 400px;
   }
-  .constainer {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-  .header-container {
-    /* max-width: 410px; */
-  }
 
   .section {
-    width: 380px;
+    max-width: 100%;
+  }
+
+  .section nav {
+    max-width: 95%;
   }
 
   h1 {
