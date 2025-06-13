@@ -759,11 +759,6 @@ footer {
     font-size: 18px;
   }
 
-  .modal-content {
-    width: 80% !important;
-    padding: 15px;
-  }
-
   .contact-us-modal .close-btn {
     position: absolute;
     top: -20px;
