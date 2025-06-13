@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Get close button elements
   const closeButtons = document.querySelectorAll(".close-btn");
-  const aboutCloseButton = document.querySelector(".about-icon");
+  const aboutCloseButton = document.querySelector(".aboutus-close-btn");
 
   // When the user clicks on About Us button, open the modal
   if (aboutUsBtn) {

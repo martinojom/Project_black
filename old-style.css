@@ -377,7 +377,7 @@ footer {
 .about-us-modal .modal-content {
   padding: 30px;
   max-width: 600px;
-  /* mask: radial-gradient(circle at top, #0000 70px, #000 70px); */
+  mask: radial-gradient(circle at top, #0000 70px, #000 70px);
   border: 2px solid black;
 }
 
@@ -392,21 +392,20 @@ footer {
   line-height: 1.6;
 }
 
-.aboutus-close-btn {
+.about-icon {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 60px;
-  height: 60px;
-  background-color: #000;
-  color: white;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #dc1b30;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  z-index: 10;
-  font-size: 18px;
+  color: white;
+  font-size: 80px;
 }
 
 /* Contact Us Modal */
@@ -415,15 +414,17 @@ footer {
   display: flex;
   padding: 5px;
   max-width: 800px;
-  /* mask: radial-gradient(circle at top right, #0000 6.8%, #000 6.8%); */
+  mask: radial-gradient(circle at top right, #0000 6.8%, #000 6.8%);
 }
 
 .contact-us-modal .close-btn {
-  position: absolute;
-  top: -20px;
-  left: 95%;
-  width: 60px;
-  height: 60px;
+  position: relative;
+  /* top: -15px;
+  right: -15px; */
+  top: -240px;
+  left: 830px;
+  width: 80px;
+  height: 80px;
   background-color: black;
   color: white;
   border-radius: 50%;
@@ -538,7 +539,7 @@ footer {
   opacity: 0.9;
 }
 
-/* .close-btn {
+.close-btn {
   position: relative;
   top: -220px;
   right: -820px;
@@ -552,7 +553,7 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 1;
-} */
+}
 
 /* Category Modal Styling */
 .category-modal .modal-content {
@@ -615,6 +616,13 @@ footer {
   .time-section {
     font-size: 5rem;
   }
+
+  /* .close-btn {
+    top: -100px;
+    right: -380px;
+    width: 40px;
+    height: 40px;
+  } */
 }
 
 @media (max-width: 768px) {
@@ -681,38 +689,27 @@ footer {
     width: 95%;
   }
 
+  .modal-content {
+    width: 90%;
+  }
+
+  .close-btn {
+    top: -50px;
+    right: -150px;
+    width: 30px;
+    height: 30px;
+  }
+
   .contact-us-modal .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .about-us-modal .modal-content,
-  .contact-us-modal .modal-content {
-    max-width: 90%;
-    padding: 20px;
-  }
-
-  .contact-info,
-  .contact-form {
-    width: 100% !important;
-    padding: 20px;
-  }
-
-  .about-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 40px;
-    top: 20px;
+    top: 165px;
+    left: 650px;
+    width: 80px;
+    height: 80px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    min-width: 480px;
-  }
   h1 {
     font-size: 36px;
   }
@@ -752,16 +749,10 @@ footer {
     font-size: 18px;
   }
 
-  .modal-content {
-    width: 80% !important;
-    padding: 15px;
-  }
-
-  .contact-us-modal .close-btn {
-    position: absolute;
-    top: -20px;
-    left: 95%;
-    width: 60px;
-    height: 60px;
+  .close-btn {
+    top: -40px;
+    right: -120px;
+    width: 25px;
+    height: 25px;
   }
 }
